@@ -1,4 +1,5 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
+
 const postSchema = mongoose.Schema(
   {
     userId: {
@@ -23,10 +24,11 @@ const postSchema = mongoose.Schema(
     },
     comments: {
       type: Array,
-      default: []
-    }
-  }, {timestamps: true}
-)
+      default: [],
+    },
+  },
+  { timestamps: true }
+);
 
 const Post = mongoose.model("Post", postSchema);
 
